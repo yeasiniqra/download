@@ -1,0 +1,989 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Optimum Report</title>
+        <link href="style.css" rel="stylesheet" />
+    </head>
+    <body>
+        <button id="btnDownload" class="reportPrint">Download</button>
+        <div id="item-download">
+            <!--====================== page one ======================-->
+            <div class="container" id="report-container">
+                <div class="main-wapper" id="main-wapper">
+                    <!--===== start header area =====-->
+                    <header class="header-area header">
+                        <div class="header-top">
+                            <img src="img/logo2.png" alt="logo" />
+                            <div class="header-content">
+                                <h2>Optimum Sourcing International Limited</h2>
+                                <span>Inspection Report</span>
+                            </div>
+                        </div>
+
+                        <div class="hader-table-parent">
+                            <div class="table-parent-top">
+                                <!-- header top content -->
+                                <div class="report-header-top-information-grid report-heder-flex">
+                                    <div class="header-info-single-item nature-col">
+                                        <span><b>Nature of Inspection</b> : </span>
+                                        <small class="auto_bind" data-binding="NatureOfInspection">Final</small>
+                                    </div>
+                                    <div class="header-info-single-item">
+                                        <span><b>Conducted By</b> : </span>
+                                        <small class="auto_bind" data-binding="ConductedBy">OSIL</small>
+                                    </div>
+                                    <div class="header-info-single-item">
+                                        <span><b>AQL</b> : </span>
+                                        <small class="auto_bind" data-binding="AqlNo">1.5</small>
+                                    </div>
+                                    <div class="header-info-single-item header-info-single-item-flex report-fail-find">
+                                        <span class="report-result"><b>Result</b></span>
+                                        <span class="report-pass pass-bg"><b class="auto_bind" data-binding="Result">Pass</b></span>
+                                    </div>
+                                </div>
+                                <!-- header top content -->
+                                <!-- common heading -->
+                                <div class="full-row">
+                                    <h2 class="pl_root">GENERAL</h2>
+                                </div>
+                                <!-- common heading -->
+                                <!-- header bottom content -->
+                                <div class="report-header-top-information-grid report-header-top-information-grid-more">
+                                    <div class="header-info-single-item">
+                                        <span><b>Date</b> : </span>
+                                        <small class="auto_bind" data-binding="Date">01-Aug-2023</small>
+                                    </div>
+                                    <div class="header-info-single-item">
+                                        <span><b>Report No</b> : </span>
+                                        <small class="auto_bind" data-binding="ReportNo">F2308100020</small>
+                                    </div>
+                                    <div class="header-info-single-item">
+                                        <span><b>Customer</b> : </span>
+                                        <small class="auto_bind" data-binding="Customer">SOCIM</small>
+                                    </div>
+                                    <div class="header-info-single-item">
+                                        <span><b>Shipped Qty</b> : </span>
+                                        <small class="auto_bind" data-binding="ShippedQuantity">2992</small>
+                                    </div>
+                                    <div class="header-info-single-item">
+                                        <span><b>PO Number</b> : </span>
+                                        <small class="auto_bind" data-binding="PoNumber">B011676</small>
+                                    </div>
+                                    <div class="header-info-single-item">
+                                        <span><b>Style Number</b> : </span>
+                                        <small class="auto_bind" data-binding="StyleNumber">Angler</small>
+                                    </div>
+                                    <div class="header-info-single-item">
+                                        <span><b>Art Number</b> : </span>
+                                        <small class="auto_bind" data-binding="AritNumber">N/A</small>
+                                    </div>
+                                    <div class="header-info-single-item">
+                                        <span><b>Order Qty</b> : </span>
+                                        <small class="auto_bind" data-binding="OrderQty">3240</small>
+                                        <small class="auto_bind" data-binding="Unit">PC</small>
+                                    </div>
+                                </div>
+                                <div class="header-grid-col2">
+                                    <div class="header-info-single-item">
+                                        <span><b>Description</b> : </span>
+                                        <small class="auto_bind" data-binding="Description">Fleece JKT HALF JKT HALF</small>
+                                    </div>
+                                    <div class="header-info-single-item base-febric">
+                                        <span><b>Base Fabric</b> : </span>
+                                        <small class="auto_bind" data-binding="BaseFabric">65%Cotton 35%polyester 280GSM 35%polyester 280GSM</small>
+                                    </div>
+
+                                    <div class="header-info-single-item">
+                                        <span><b>Color</b> : </span>
+                                        <small class="auto_bind" data-binding="Combo">Blu Navy, Smock Grey, Black, Royal</small>
+                                    </div>
+                                </div>
+                                <!-- header bottom content -->
+                            </div>
+                        </div>
+                    </header>
+                    <!--===== End header area =====-->
+                    <!--====================== start page body for print ======================-->
+                    <main>
+                        <h2 class="pageCount"></h2>
+                        <!--===== start Agent table area =====-->
+                        <section class="base-fabrice agent-table margin-root">
+                            <!--  Base Fabric content -->
+                            <div class="report-base-fabric">
+                                <div class="base-fabric-row first-row">
+                                    <div class="header-info-single-item">
+                                        <span><b>Agent</b> : </span>
+                                        <small class="auto_bind" data-binding="Agent">OSIL</small>
+                                    </div>
+                                    <div class="header-info-single-item">
+                                        <span><b>Address</b> : </span>
+                                        <small class="auto_bind" data-binding="Address">House #53195thFloor Lane#11,DOHS Baridhara, Dhaka- 1206 Bangladesh.</small>
+                                    </div>
+                                </div>
+                                <div class="base-fabric-row">
+                                    <div class="header-info-single-item">
+                                        <span><b>Name of Merchandiser</b> : </span>
+                                        <small class="auto_bind" data-binding="NameOfMerchandiser"> Farjana Ahmed/Shawon</small>
+                                    </div>
+                                    <div class="header-info-single-item">
+                                        <span><b>E-Mail ID</b> : </span>
+                                        <small class="auto_bind" data-binding="MemailId">farjana@optimumsourcingbd.com</small>
+                                    </div>
+                                    <div class="header-info-single-item">
+                                        <span><b>Cell</b> : </span>
+                                        <small class="auto_bind" data-binding="Mcell">01324437970</small>
+                                    </div>
+                                </div>
+                                <div class="base-fabric-row">
+                                    <div class="header-info-single-item">
+                                        <span><b>Name of Inspector</b> : </span>
+                                        <small class="auto_bind" data-binding="NameOfInspector">Mr. Arun/ Kamrul</small>
+                                    </div>
+                                    <div class="header-info-single-item">
+                                        <span><b>E-Mail ID</b> : </span>
+                                        <small class="auto_bind" data-binding="IemailId">quality@optimumsourcingbd.com</small>
+                                    </div>
+                                    <div class="header-info-single-item">
+                                        <span><b>Cell</b> : </span>
+                                        <small class="auto_bind" data-binding="Icell">01324437978</small>
+                                    </div>
+                                </div>
+                                <div class="base-fabric-row first-row">
+                                    <div class="header-info-single-item">
+                                        <span><b>Manufacturer Name</b> : </span>
+                                        <small class="auto_bind" data-binding="ManufacturerName">OFWL</small>
+                                    </div>
+                                    <div class="header-info-single-item">
+                                        <span><b>Address</b> : </span>
+                                        <small class="auto_bind" data-binding="MeAddress">House #53195thFloor Lane#11,DOHS Baridhara</small>
+                                    </div>
+                                </div>
+                                <div class="base-fabric-row">
+                                    <div class="header-info-single-item">
+                                        <span><b>Contact Person</b> : </span>
+                                        <small class="auto_bind" data-binding="ContactPersion">Mr. Nannu</small>
+                                    </div>
+                                    <div class="header-info-single-item">
+                                        <span><b>E-Mail ID</b> : </span>
+                                        <small class="auto_bind" data-binding="CsEmailId">quality@optimumsourcingbd.com</small>
+                                    </div>
+                                    <div class="header-info-single-item">
+                                        <span><b>Cell</b> : </span>
+                                        <small class="auto_bind" data-binding="CsCell"></small>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--  Base Fabric content -->
+                        </section>
+                        <!--===== End Agent area =====-->
+                        <!--===== start aql chart table area =====-->
+                        <section id="aql-chart-area" class="aql-chart-area">
+                            <div class="table-chart-top">
+                                <!-- common heading -->
+                                <div class="full-row mb-8 desk-m">
+                                    <h2 class="pl_root aql_relative">AQL CHART</h2>
+                                </div>
+                                <!-- common heading -->
+                                <table style="width: 100%;">
+                                    <!-- <tr class="general">
+                                    <td class="pl_root" colspan="10">AQL CHART</td>
+                                </tr> -->
+                                    <tr class="aql-chart-heading">
+                                        <td class="base-agent">Lot Qty (Unit)</td>
+                                        <td>Unit to be <span>Inspected</span></td>
+                                        <td>AQL Level <span> 1.5 Major</span></td>
+                                        <td>AQL Level <span> 1.5 Minor</span></td>
+                                        <td>AQL Level <span> 2.5 Major</span></td>
+                                        <td>AQL Level <span> 2.5 Minor</span></td>
+                                        <td>AQL Level <span> 4 Major</span></td>
+                                        <td>AQL Level <span> 4 Minor</span></td>
+                                    </tr>
+                                    <tr data-max="150" data-min="1">
+                                        <td>01-150</td>
+                                        <td>20</td>
+                                        <td>1</td>
+                                        <td>1</td>
+                                        <td>1</td>
+                                        <td>2</td>
+                                        <td>2</td>
+                                        <td>3</td>
+                                    </tr>
+                                    <tr data-max="280" data-min="151">
+                                        <td>151-280</td>
+                                        <td>32</td>
+                                        <td>1</td>
+                                        <td>2</td>
+                                        <td>2</td>
+                                        <td>3</td>
+                                        <td>3</td>
+                                        <td>5</td>
+                                    </tr>
+                                    <tr data-max="500" data-min="281">
+                                        <td>281-500</td>
+                                        <td>50</td>
+                                        <td>2</td>
+                                        <td>3</td>
+                                        <td>3</td>
+                                        <td>5</td>
+                                        <td>5</td>
+                                        <td>7</td>
+                                    </tr>
+                                    <tr data-max="1200" data-min="501">
+                                        <td>501-1200</td>
+                                        <td>80</td>
+                                        <td>3</td>
+                                        <td>5</td>
+                                        <td>5</td>
+                                        <td>7</td>
+                                        <td>7</td>
+                                        <td>10</td>
+                                    </tr>
+                                    <tr data-max="3200" data-min="1201">
+                                        <td>1201-3200</td>
+                                        <td>125</td>
+                                        <td>5</td>
+                                        <td>7</td>
+                                        <td>7</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                        <td>14</td>
+                                    </tr>
+                                    <tr data-max="10000" data-min="3201">
+                                        <td>3201-10,000</td>
+                                        <td>200</td>
+                                        <td>7</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                        <td>14</td>
+                                        <td>14</td>
+                                        <td>21</td>
+                                    </tr>
+                                    <tr data-max="35000" data-min="10001">
+                                        <td>10,001-35,000</td>
+                                        <td>315</td>
+                                        <td>10</td>
+                                        <td>14</td>
+                                        <td>14</td>
+                                        <td>21</td>
+                                        <td>21</td>
+                                        <td>21</td>
+                                    </tr>
+                                    <tr data-max="150000" data-min="35,001">
+                                        <td>35,001-150,000</td>
+                                        <td>500</td>
+                                        <td>14</td>
+                                        <td>21</td>
+                                        <td>21</td>
+                                        <td>21</td>
+                                        <td>21</td>
+                                        <td>21</td>
+                                    </tr>
+                                    <tr data-max="500000" data-min="150001">
+                                        <td>150,001-500,000</td>
+                                        <td>800</td>
+                                        <td>21</td>
+                                        <td>21</td>
+                                        <td>21</td>
+                                        <td>21</td>
+                                        <td>21</td>
+                                        <td>21</td>
+                                    </tr>
+                                    <tr data-max="9999999999" data-min="500001">
+                                        <td>500,001-OVER</td>
+                                        <td>1250</td>
+                                        <td>21</td>
+                                        <td>21</td>
+                                        <td>21</td>
+                                        <td>21</td>
+                                        <td>21</td>
+                                        <td>21</td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </section>
+                        <!--===== End aql chart table area =====-->
+                        <!--===== start style image area =====-->
+                        <section class="style-image-area margin-root">
+                            <!-- common heading -->
+                            <div class="full-row image-style-full-row desk-m">
+                                <h2 class="pl_root">IMAGE OF STYLE</h2>
+                            </div>
+                            <!-- common heading -->
+                            <div class="carton-image-grid image-col-2 image-col-1">
+                                <!-- single item -->
+                                <div class="carton-row">
+                                    <div class="carton-col">
+                                        <div class="carton-img-inner">
+                                            <img class="carton-img" src="img/front.webp" alt="carton" />
+                                        </div>
+                                        <p class="auto_bind" data-binding="FrontViewContent">Front View</p>
+                                        <!-- <p>Front View</p> -->
+                                    </div>
+                                </div>
+                                <!-- single item -->
+                                <div class="carton-row">
+                                    <div class="carton-col">
+                                        <div class="carton-img-inner">
+                                            <img class="carton-img" src="img/back.webp" alt="carton" />
+                                        </div>
+                                        <p class="auto_bind" data-binding="BackViewContent">Back View</p>
+                                        <!-- <p>Back View</p> -->
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        <!--===== End style image area =====-->
+                    </main>
+                    <!--===== start footer area =====-->
+                    <footer class="footer-area">
+                        <div class="footer-content">
+                            <p>House # 531, (5th Floor), Lane # 11, DOHS, Baridhara, Dhaka-1206, Bangladesh.</p>
+                            <p>Mobile : +88-01731155900, +88-01705456003</p>
+                            <p>E-mail: zakir@optimumsourcingbd.com, zakir@optimum-bd.com</p>
+                            <p>Concept by - Md. Arifur Rahaman (HBO)</p>
+                        </div>
+                        <span>Developed by - <a target="_blank" href="https://iqrasys.com" rel="dofollow">Iqrasys Solutions Ltd.</a></span>
+                    </footer>
+                    <!--===== End footer area =====-->
+                </div>
+            </div>
+            <!--====================== page one ======================-->
+            <!--====================== page two ======================-->
+            <div class="container" id="report-container">
+                <div class="main-wapper" id="main-wapper">
+                    <!--===== start header area =====-->
+                    <header class="header-area header">
+                        <div class="header-top">
+                            <img src="img/logo2.png" alt="logo" />
+                            <div class="header-content">
+                                <h2>Optimum Sourcing International Limited</h2>
+                                <span>Inspection Report</span>
+                            </div>
+                        </div>
+
+                        <div class="hader-table-parent">
+                            <div class="table-parent-top">
+                                <!-- header top content -->
+                                <div class="report-header-top-information-grid report-heder-flex">
+                                    <div class="header-info-single-item nature-col">
+                                        <span><b>Nature of Inspection</b> : </span>
+                                        <small class="auto_bind" data-binding="NatureOfInspection">Final</small>
+                                    </div>
+                                    <div class="header-info-single-item">
+                                        <span><b>Conducted By</b> : </span>
+                                        <small class="auto_bind" data-binding="ConductedBy">OSIL</small>
+                                    </div>
+                                    <div class="header-info-single-item">
+                                        <span><b>AQL</b> : </span>
+                                        <small class="auto_bind" data-binding="AqlNo">1.5</small>
+                                    </div>
+                                    <div class="header-info-single-item header-info-single-item-flex report-fail-find">
+                                        <span class="report-result"><b>Result</b></span>
+                                        <span class="report-pass pass-bg"><b class="auto_bind" data-binding="Result">Pass</b></span>
+                                    </div>
+                                </div>
+                                <!-- header top content -->
+                                <!-- common heading -->
+                                <div class="full-row">
+                                    <h2 class="pl_root">GENERAL</h2>
+                                </div>
+                                <!-- common heading -->
+                                <!-- header bottom content -->
+                                <div class="report-header-top-information-grid report-header-top-information-grid-more">
+                                    <div class="header-info-single-item">
+                                        <span><b>Date</b> : </span>
+                                        <small class="auto_bind" data-binding="Date">01-Aug-2023</small>
+                                    </div>
+                                    <div class="header-info-single-item">
+                                        <span><b>Report No</b> : </span>
+                                        <small class="auto_bind" data-binding="ReportNo">F2308100020</small>
+                                    </div>
+                                    <div class="header-info-single-item">
+                                        <span><b>Customer</b> : </span>
+                                        <small class="auto_bind" data-binding="Customer">SOCIM</small>
+                                    </div>
+                                    <div class="header-info-single-item">
+                                        <span><b>Shipped Qty</b> : </span>
+                                        <small class="auto_bind" data-binding="ShippedQuantity">2992</small>
+                                    </div>
+                                    <div class="header-info-single-item">
+                                        <span><b>PO Number</b> : </span>
+                                        <small class="auto_bind" data-binding="PoNumber">B011676</small>
+                                    </div>
+                                    <div class="header-info-single-item">
+                                        <span><b>Style Number</b> : </span>
+                                        <small class="auto_bind" data-binding="StyleNumber">Angler</small>
+                                    </div>
+                                    <div class="header-info-single-item">
+                                        <span><b>Art Number</b> : </span>
+                                        <small class="auto_bind" data-binding="AritNumber">N/A</small>
+                                    </div>
+                                    <div class="header-info-single-item">
+                                        <span><b>Order Qty</b> : </span>
+                                        <small class="auto_bind" data-binding="OrderQty">3240</small>
+                                        <small class="auto_bind" data-binding="Unit">PC</small>
+                                    </div>
+                                </div>
+                                <div class="header-grid-col2">
+                                    <div class="header-info-single-item">
+                                        <span><b>Description</b> : </span>
+                                        <small class="auto_bind" data-binding="Description">Fleece JKT HALF JKT HALF</small>
+                                    </div>
+                                    <div class="header-info-single-item base-febric">
+                                        <span><b>Base Fabric</b> : </span>
+                                        <small class="auto_bind" data-binding="BaseFabric">65%Cotton 35%polyester 280GSM 35%polyester 280GSM</small>
+                                    </div>
+
+                                    <div class="header-info-single-item">
+                                        <span><b>Color</b> : </span>
+                                        <small class="auto_bind" data-binding="Combo">Blu Navy, Smock Grey, Black, Royal</small>
+                                    </div>
+                                </div>
+                                <!-- header bottom content -->
+                            </div>
+                        </div>
+                    </header>
+                    <!--===== End header area =====-->
+                    <!--====================== start page body for print ======================-->
+                    <main id="inspection-container">
+                        <h2 class="pageCount"></h2>
+                        <!--===== start INSPECTION SUMMARY table area =====-->
+                        <section class="inspection-summary-area margin-root">
+                            <div class="inspection-summary">
+                                <h2 class="general pl_root desk-m">INSPECTION SUMMARY</h2>
+                                <div class="summery-row" data-binding="InspectionSummary">
+                                    <p class="auto_bind inside-summery-row" data-binding="InspectionSummary"></p>
+                                </div>
+                            </div>
+                        </section>
+                        <!--===== End INSPECTION SUMMARY table area =====-->
+                        <!--===== start CARTON DETAILS table area =====-->
+                        <section class="carton-details-area margin-root">
+                            <div class="carton-details">
+                                <div class="table-carton-top">
+                                    <!-- common heading -->
+                                    <div class="full-row mb-6 desk-m">
+                                        <h2 class="pl_root">CARTON DETAILS</h2>
+                                    </div>
+                                    <!-- common heading -->
+                                    <!-- start cartion details area -->
+                                    <div class="carton_details_flex">
+                                        <span class="carton-con1">Total Carton Qty :</span>
+                                        <small class="carton-con2 auto_bind" data-binding="CartonQuantity">34234</small>
+                                        <span class="carton-con3">Carton Number : </span>
+                                        <small class="carton-con4 auto_bind" data-binding="CartonNumber">
+                                            02 03 04 07 17 24 34 49 52 70 78 87 99 104 109 11302 03 04 07 17 24 34 49 52 70 78 87 99 104 109 11302 03 04 07 17 24 34 49 52 70 78 87 99 104 109 113
+                                        </small>
+                                    </div>
+                                    <!-- End cartion details area -->
+                                    <div class="carton-image-grid">
+                                        <!-- single item -->
+                                        <div class="carton-row">
+                                            <div class="carton-col">
+                                                <div class="carton-img-inner">
+                                                    <img class="carton-img" src="img/ctn.webp" alt="carton" />
+                                                </div>
+                                                <p class="auto_bind" data-binding="CartonContentOne">Write Image Description</p>
+                                            </div>
+                                        </div>
+                                        <!-- single item -->
+                                        <div class="carton-row">
+                                            <div class="carton-col">
+                                                <div class="carton-img-inner">
+                                                    <img class="carton-img" src="img/ctn.webp" alt="carton" />
+                                                </div>
+                                                <p class="auto_bind" data-binding="CartonContentTwo">Write Image Description</p>
+                                            </div>
+                                        </div>
+                                        <!-- single item -->
+                                        <div class="carton-row">
+                                            <div class="carton-col">
+                                                <div class="carton-img-inner">
+                                                    <img class="carton-img" src="img/ctn.webp" alt="carton" />
+                                                </div>
+                                                <p class="auto_bind" data-binding="CartonContentThree">Write Image Description</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        <!--===== End CARTON DETAILS table area =====-->
+                        <!--===== start DEFECTS DESCRIPTION table area =====-->
+                        <section class="defects-description-area">
+                            <div class="table-chart-top defects-description-table defect-height-print">
+                                <table style="width: 100%;">
+                                    <tr class="general">
+                                        <td colspan="12">DEFECTS DESCRIPTION</td>
+                                        <td>Major</td>
+                                        <td>Minor</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="auto_bind" colspan="12" data-binding="OpenStitchOpt1">Write Defect Description</td>
+                                        <td class="auto_bind" data-binding="OpenStitchOptMajor1">1</td>
+                                        <td class="auto_bind" data-binding="OpenStitchOptMinor1">2</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="auto_bind" colspan="12" data-binding="OpenStitchOpt2">Write Defect Description</td>
+                                        <td class="auto_bind" data-binding="OpenStitchOptMajor2">1</td>
+                                        <td class="auto_bind" data-binding="OpenStitchOptMinor2">5</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="auto_bind" colspan="12" data-binding="OpenStitchOpt3">Write Defect Description</td>
+                                        <td class="auto_bind" data-binding="OpenStitchOptMajor3">4</td>
+                                        <td class="auto_bind" data-binding="OpenStitchOptMinor3">5</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="auto_bind" colspan="12" data-binding="OpenStitchOpt4">Write Defect Description</td>
+                                        <td class="auto_bind" data-binding="OpenStitchOptMajor4">3</td>
+                                        <td class="auto_bind" data-binding="OpenStitchOptMinor4">2</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="auto_bind" colspan="12" data-binding="OpenStitchOpt5">Write Defect Description</td>
+                                        <td class="auto_bind" data-binding="OpenStitchOptMajor5">4</td>
+                                        <td class="auto_bind" data-binding="OpenStitchOptMinor5">4</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="auto_bind" colspan="12" data-binding="OpenStitchOpt6">Write Defect Description</td>
+                                        <td class="auto_bind" data-binding="OpenStitchOptMajor6">6</td>
+                                        <td class="auto_bind" data-binding="OpenStitchOptMinor6">3</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="auto_bind" colspan="12" data-binding="OpenStitchOpt7">Write Defect Description</td>
+                                        <td class="auto_bind" data-binding="OpenStitchOptMajor7">2</td>
+                                        <td class="auto_bind" data-binding="OpenStitchOptMinor7">9</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="auto_bind" colspan="12" data-binding="OpenStitchOpt8">Write Defect Description</td>
+                                        <td class="auto_bind" data-binding="OpenStitchOptMajor8">8</td>
+                                        <td class="auto_bind" data-binding="OpenStitchOptMinor8">1</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="auto_bind" colspan="12" data-binding="OpenStitchOpt9">Write Defect Description</td>
+                                        <td class="auto_bind" data-binding="OpenStitchOptMajor9">7</td>
+                                        <td class="auto_bind" data-binding="OpenStitchOptMinor9">2</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="auto_bind" colspan="12" data-binding="OpenStitchOpt10">Write Defect Description</td>
+                                        <td class="auto_bind" data-binding="OpenStitchOptMajor10">6</td>
+                                        <td class="auto_bind" data-binding="OpenStitchOptMinor10">3</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="auto_bind" colspan="12" data-binding="OpenStitchOpt11">Write Defect Description</td>
+                                        <td class="auto_bind" data-binding="OpenStitchOptMajor11">5</td>
+                                        <td class="auto_bind" data-binding="OpenStitchOptMinor11">4</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="auto_bind" colspan="12" data-binding="OpenStitchOpt12">Write Defect Description</td>
+                                        <td class="auto_bind" data-binding="OpenStitchOptMajor12">3</td>
+                                        <td class="auto_bind" data-binding="OpenStitchOptMinor12">5</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="auto_bind" colspan="12" data-binding="OpenStitchOpt13">Write Defect Description</td>
+                                        <td class="auto_bind" data-binding="OpenStitchOptMajor13">2</td>
+                                        <td class="auto_bind" data-binding="OpenStitchOptMinor13">6</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="auto_bind" colspan="12" data-binding="OpenStitchOpt14">Write Defect Description</td>
+                                        <td class="auto_bind" data-binding="OpenStitchOptMajor14">1</td>
+                                        <td class="auto_bind" data-binding="OpenStitchOptMinor14">7</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="auto_bind" colspan="12" data-binding="OpenStitchOpt15">Write Defect Description</td>
+                                        <td class="auto_bind" data-binding="OpenStitchOptMajor15">9</td>
+                                        <td class="auto_bind" data-binding="OpenStitchOptMinor15">5</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="auto_bind" colspan="12" data-binding="OpenStitchOpt16">Write Defect Description</td>
+                                        <td class="auto_bind" data-binding="OpenStitchOptMajor16">5</td>
+                                        <td class="auto_bind" data-binding="OpenStitchOptMinor16">3</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="auto_bind" colspan="12" data-binding="OpenStitchOpt17">Write Defect Description</td>
+                                        <td class="auto_bind" data-binding="OpenStitchOptMajor17">4</td>
+                                        <td class="auto_bind" data-binding="OpenStitchOptMinor17">8</td>
+                                    </tr>
+                                    <tr class="report-fail-find">
+                                        <td class="defect-found-right" colspan="12">Total Defect Found</td>
+                                        <td class="pass-bg auto_bind" data-binding="TotalMajor"><b>13</b></td>
+                                        <td class="pass-bg auto_bind" data-binding="TotalMinor"><b>18</b></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="unit-blod common-bg" colspan="11">Unit to be Inspected : <b class="auto_bind" data-binding="AQUnit"></b></td>
+                                        <td class="defect-found-right defect-found-after common-bg">Allowed in AQL</td>
+                                        <td class="common-bg"><b class="auto_bind" data-binding="AQMajor"></b></td>
+                                        <td class="common-bg"><b class="auto_bind" data-binding="AQMinor"></b></td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </section>
+                        <!--===== End DEFECTS DESCRIPTION table area =====-->
+                    </main>
+
+                    <!--===== start footer area =====-->
+                    <footer class="footer-area">
+                        <div class="footer-content">
+                            <p>House # 531, (5th Floor), Lane # 11, DOHS, Baridhara, Dhaka-1206, Bangladesh.</p>
+                            <p>Mobile : +88-01731155900, +88-01705456003</p>
+                            <p>E-mail: zakir@optimumsourcingbd.com, zakir@optimum-bd.com</p>
+                            <p>Concept by - Md. Arifur Rahaman (HBO)</p>
+                        </div>
+                        <span>Developed by - <a target="_blank" href="https://iqrasys.com" rel="dofollow">Iqrasys Solutions Ltd.</a></span>
+                    </footer>
+                    <!--===== End footer area =====-->
+                </div>
+            </div>
+            <!--====================== page two ======================-->
+            <!--====================== page three ======================-->
+            <div class="container" id="report-container">
+                <div class="main-wapper" id="main-wapper">
+                    <!--===== start header area =====-->
+                    <header class="header-area header">
+                        <div class="header-top">
+                            <img src="img/logo2.png" alt="logo" />
+                            <div class="header-content">
+                                <h2>Optimum Sourcing International Limited</h2>
+                                <span>Inspection Report</span>
+                            </div>
+                        </div>
+
+                        <div class="hader-table-parent">
+                            <div class="table-parent-top">
+                                <!-- header top content -->
+                                <div class="report-header-top-information-grid report-heder-flex">
+                                    <div class="header-info-single-item nature-col">
+                                        <span><b>Nature of Inspection</b> : </span>
+                                        <small class="auto_bind" data-binding="NatureOfInspection">Final</small>
+                                    </div>
+                                    <div class="header-info-single-item">
+                                        <span><b>Conducted By</b> : </span>
+                                        <small class="auto_bind" data-binding="ConductedBy">OSIL</small>
+                                    </div>
+                                    <div class="header-info-single-item">
+                                        <span><b>AQL</b> : </span>
+                                        <small class="auto_bind" data-binding="AqlNo">1.5</small>
+                                    </div>
+                                    <div class="header-info-single-item header-info-single-item-flex report-fail-find">
+                                        <span class="report-result"><b>Result</b></span>
+                                        <span class="report-pass pass-bg"><b class="auto_bind" data-binding="Result">Pass</b></span>
+                                    </div>
+                                </div>
+                                <!-- header top content -->
+                                <!-- common heading -->
+                                <div class="full-row">
+                                    <h2 class="pl_root">GENERAL</h2>
+                                </div>
+                                <!-- common heading -->
+                                <!-- header bottom content -->
+                                <div class="report-header-top-information-grid report-header-top-information-grid-more">
+                                    <div class="header-info-single-item">
+                                        <span><b>Date</b> : </span>
+                                        <small class="auto_bind" data-binding="Date">01-Aug-2023</small>
+                                    </div>
+                                    <div class="header-info-single-item">
+                                        <span><b>Report No</b> : </span>
+                                        <small class="auto_bind" data-binding="ReportNo">F2308100020</small>
+                                    </div>
+                                    <div class="header-info-single-item">
+                                        <span><b>Customer</b> : </span>
+                                        <small class="auto_bind" data-binding="Customer">SOCIM</small>
+                                    </div>
+                                    <div class="header-info-single-item">
+                                        <span><b>Shipped Qty</b> : </span>
+                                        <small class="auto_bind" data-binding="ShippedQuantity">2992</small>
+                                    </div>
+                                    <div class="header-info-single-item">
+                                        <span><b>PO Number</b> : </span>
+                                        <small class="auto_bind" data-binding="PoNumber">B011676</small>
+                                    </div>
+                                    <div class="header-info-single-item">
+                                        <span><b>Style Number</b> : </span>
+                                        <small class="auto_bind" data-binding="StyleNumber">Angler</small>
+                                    </div>
+                                    <div class="header-info-single-item">
+                                        <span><b>Art Number</b> : </span>
+                                        <small class="auto_bind" data-binding="AritNumber">N/A</small>
+                                    </div>
+                                    <div class="header-info-single-item">
+                                        <span><b>Order Qty</b> : </span>
+                                        <small class="auto_bind" data-binding="OrderQty">3240</small>
+                                        <small class="auto_bind" data-binding="Unit">PC</small>
+                                    </div>
+                                </div>
+                                <div class="header-grid-col2">
+                                    <div class="header-info-single-item">
+                                        <span><b>Description</b> : </span>
+                                        <small class="auto_bind" data-binding="Description">Fleece JKT HALF JKT HALF</small>
+                                    </div>
+                                    <div class="header-info-single-item base-febric">
+                                        <span><b>Base Fabric</b> : </span>
+                                        <small class="auto_bind" data-binding="BaseFabric">65%Cotton 35%polyester 280GSM 35%polyester 280GSM</small>
+                                    </div>
+
+                                    <div class="header-info-single-item">
+                                        <span><b>Color</b> : </span>
+                                        <small class="auto_bind" data-binding="Combo">Blu Navy, Smock Grey, Black, Royal</small>
+                                    </div>
+                                </div>
+                                <!-- header bottom content -->
+                            </div>
+                        </div>
+                    </header>
+                    <!--===== End header area =====-->
+                    <div id="defact-img-container">
+                        <!--===== start CARTON DETAILS SINGLE area =====-->
+                        <div class="defact-img-container">
+                            <main class="defect-length-page">
+                                <h2 class="pageCount"></h2>
+                                <section class="carton-details-item-area margin-root">
+                                    <div class="inspection-details">
+                                        <h2 class="general pl_root desk-m">DETAILS</h2>
+                                        <div class="carton-image-grid single-image-carton-grid flex-single-image-carton-grid" id="item-container">
+                                            <div class="carton-row">
+                                                <div class="carton-col">
+                                                    <div class="carton-img-inner">
+                                                        <img class="carton-img" src="img/pd.webp" alt="carton" />
+                                                    </div>
+                                                    <p class="txt-description">aws</p>
+                                                </div>
+                                            </div>
+                                            <div class="carton-row">
+                                                <div class="carton-col">
+                                                    <div class="carton-img-inner">
+                                                        <img class="carton-img" src="img/pd.webp" alt="carton" />
+                                                    </div>
+                                                    <p class="txt-description">dsfsdf</p>
+                                                </div>
+                                            </div>
+                                            <div class="carton-row">
+                                                <div class="carton-col">
+                                                    <div class="carton-img-inner">
+                                                        <img class="carton-img" src="img/pd.webp" alt="carton" />
+                                                    </div>
+                                                    <p class="txt-description">sfsd</p>
+                                                </div>
+                                            </div>
+                                            <div class="carton-row">
+                                                <div class="carton-col">
+                                                    <div class="carton-img-inner">
+                                                        <img class="carton-img" src="img/pd.webp" alt="carton" />
+                                                    </div>
+                                                    <p class="txt-description">agfdg</p>
+                                                </div>
+                                            </div>
+                                            <div class="carton-row">
+                                                <div class="carton-col">
+                                                    <div class="carton-img-inner">
+                                                        <img class="carton-img" src="img/pd.webp" alt="carton" />
+                                                    </div>
+                                                    <p class="txt-description">dgfdg</p>
+                                                </div>
+                                            </div>
+                                            <div class="carton-row">
+                                                <div class="carton-col">
+                                                    <div class="carton-img-inner">
+                                                        <img class="carton-img" src="img/pd.webp" alt="carton" />
+                                                    </div>
+                                                    <p class="txt-description">gred</p>
+                                                </div>
+                                            </div>
+                                            <div class="carton-row">
+                                                <div class="carton-col">
+                                                    <div class="carton-img-inner">
+                                                        <img class="carton-img" src="img/pd.webp" alt="carton" />
+                                                    </div>
+                                                    <p class="txt-description">dfgfdgfd</p>
+                                                </div>
+                                            </div>
+                                            <div class="carton-row">
+                                                <div class="carton-col">
+                                                    <div class="carton-img-inner">
+                                                        <img class="carton-img" src="img/pd.webp" alt="carton" />
+                                                    </div>
+                                                    <p class="txt-description">gds</p>
+                                                </div>
+                                            </div>
+                                            <div class="carton-row">
+                                                <div class="carton-col">
+                                                    <div class="carton-img-inner">
+                                                        <img class="carton-img" src="img/pd.webp" alt="carton" />
+                                                    </div>
+                                                    <p class="txt-description">agfgadfgd</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </section>
+                            </main>
+                        </div>
+                        <!--===== End CARTON DETAILS SINGLE area =====-->
+                    </div>
+                    <!--===== start footer area =====-->
+                    <footer class="footer-area">
+                        <div class="footer-content">
+                            <p>House # 531, (5th Floor), Lane # 11, DOHS, Baridhara, Dhaka-1206, Bangladesh.</p>
+                            <p>Mobile : +88-01731155900, +88-01705456003</p>
+                            <p>E-mail: zakir@optimumsourcingbd.com, zakir@optimum-bd.com</p>
+                            <p>Concept by - Md. Arifur Rahaman (HBO)</p>
+                        </div>
+                        <span>Developed by - <a target="_blank" href="https://iqrasys.com" rel="dofollow">Iqrasys Solutions Ltd.</a></span>
+                    </footer>
+                    <!--===== End footer area =====-->
+                </div>
+            </div>
+            <!--====================== page three ======================-->
+            <!--====================== page four ======================-->
+            <div class="container" id="report-container">
+                <div class="main-wapper" id="main-wapper">
+                    <!--===== start header area =====-->
+                    <header class="header-area header">
+                        <div class="header-top">
+                            <img src="img/logo2.png" alt="logo" />
+                            <div class="header-content">
+                                <h2>Optimum Sourcing International Limited</h2>
+                                <span>Inspection Report</span>
+                            </div>
+                        </div>
+
+                        <div class="hader-table-parent">
+                            <div class="table-parent-top">
+                                <!-- header top content -->
+                                <div class="report-header-top-information-grid report-heder-flex">
+                                    <div class="header-info-single-item nature-col">
+                                        <span><b>Nature of Inspection</b> : </span>
+                                        <small class="auto_bind" data-binding="NatureOfInspection">Final</small>
+                                    </div>
+                                    <div class="header-info-single-item">
+                                        <span><b>Conducted By</b> : </span>
+                                        <small class="auto_bind" data-binding="ConductedBy">OSIL</small>
+                                    </div>
+                                    <div class="header-info-single-item">
+                                        <span><b>AQL</b> : </span>
+                                        <small class="auto_bind" data-binding="AqlNo">1.5</small>
+                                    </div>
+                                    <div class="header-info-single-item header-info-single-item-flex report-fail-find">
+                                        <span class="report-result"><b>Result</b></span>
+                                        <span class="report-pass pass-bg"><b class="auto_bind" data-binding="Result">Pass</b></span>
+                                    </div>
+                                </div>
+                                <!-- header top content -->
+                                <!-- common heading -->
+                                <div class="full-row">
+                                    <h2 class="pl_root">GENERAL</h2>
+                                </div>
+                                <!-- common heading -->
+                                <!-- header bottom content -->
+                                <div class="report-header-top-information-grid report-header-top-information-grid-more">
+                                    <div class="header-info-single-item">
+                                        <span><b>Date</b> : </span>
+                                        <small class="auto_bind" data-binding="Date">01-Aug-2023</small>
+                                    </div>
+                                    <div class="header-info-single-item">
+                                        <span><b>Report No</b> : </span>
+                                        <small class="auto_bind" data-binding="ReportNo">F2308100020</small>
+                                    </div>
+                                    <div class="header-info-single-item">
+                                        <span><b>Customer</b> : </span>
+                                        <small class="auto_bind" data-binding="Customer">SOCIM</small>
+                                    </div>
+                                    <div class="header-info-single-item">
+                                        <span><b>Shipped Qty</b> : </span>
+                                        <small class="auto_bind" data-binding="ShippedQuantity">2992</small>
+                                    </div>
+                                    <div class="header-info-single-item">
+                                        <span><b>PO Number</b> : </span>
+                                        <small class="auto_bind" data-binding="PoNumber">B011676</small>
+                                    </div>
+                                    <div class="header-info-single-item">
+                                        <span><b>Style Number</b> : </span>
+                                        <small class="auto_bind" data-binding="StyleNumber">Angler</small>
+                                    </div>
+                                    <div class="header-info-single-item">
+                                        <span><b>Art Number</b> : </span>
+                                        <small class="auto_bind" data-binding="AritNumber">N/A</small>
+                                    </div>
+                                    <div class="header-info-single-item">
+                                        <span><b>Order Qty</b> : </span>
+                                        <small class="auto_bind" data-binding="OrderQty">3240</small>
+                                        <small class="auto_bind" data-binding="Unit">PC</small>
+                                    </div>
+                                </div>
+                                <div class="header-grid-col2">
+                                    <div class="header-info-single-item">
+                                        <span><b>Description</b> : </span>
+                                        <small class="auto_bind" data-binding="Description">Fleece JKT HALF JKT HALF</small>
+                                    </div>
+                                    <div class="header-info-single-item base-febric">
+                                        <span><b>Base Fabric</b> : </span>
+                                        <small class="auto_bind" data-binding="BaseFabric">65%Cotton 35%polyester 280GSM 35%polyester 280GSM</small>
+                                    </div>
+
+                                    <div class="header-info-single-item">
+                                        <span><b>Color</b> : </span>
+                                        <small class="auto_bind" data-binding="Combo">Blu Navy, Smock Grey, Black, Royal</small>
+                                    </div>
+                                </div>
+                                <!-- header bottom content -->
+                            </div>
+                        </div>
+                    </header>
+                    <div id="mainSection">
+                        <main>
+                            <h2 class="pageCount"></h2>
+                            <section class="carton-details-item-area margin-root">
+                                <div class="inspection-details">
+                                    <h2 class="general pl_root desk-m">ATTACHMENT</h2>
+                                    <div class="carton-image-grid single-image-carton-grid attach-single-image-1x">
+                                        <div class="carton-row">
+                                            <div class="carton-col">
+                                                <div class="carton-img-inner">
+                                                    <img class="carton-img1" src="img/yyt.webp" />
+                                                </div>
+                                                <span class="txt-description"> </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                        </main>
+                    </div>
+                    <!--===== start footer area =====-->
+                    <footer class="footer-area">
+                        <div class="footer-content">
+                            <p>House # 531, (5th Floor), Lane # 11, DOHS, Baridhara, Dhaka-1206, Bangladesh.</p>
+                            <p>Mobile : +88-01731155900, +88-01705456003</p>
+                            <p>E-mail: zakir@optimumsourcingbd.com, zakir@optimum-bd.com</p>
+                            <p>Concept by - Md. Arifur Rahaman (HBO)</p>
+                        </div>
+                        <span>Developed by - <a target="_blank" href="https://iqrasys.com" rel="dofollow">Iqrasys Solutions Ltd.</a></span>
+                    </footer>
+                    <!--===== End footer area =====-->
+                </div>
+            </div>
+            <!--====================== page four ======================-->
+        </div>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.2/html2pdf.bundle.js"></script>
+        <!-- <script src="https://cdn.jsdelivr.net/npm/jspdf@2.5.1/dist/jspdf.es.min.js"></script> -->
+        <script>
+            document.getElementById("btnDownload").addEventListener("click", () => {
+                const invoice = document.getElementById("item-download");
+                console.log(invoice);
+
+                var opt = {
+                    margin: 12.7,
+                    filename: "myfile.pdf",
+                    image: { type: "jpeg", quality: 1.0 },
+                    html2canvas: { scale: 1.0 },
+                    jsPDF: { unit: "mm", format: "a4", orientation: "portrait" },
+                };
+
+                setTimeout(() => {
+                    html2pdf().from(invoice).set(opt).save();
+                }, 2000);
+            });
+        </script>
+    </body>
+</html>

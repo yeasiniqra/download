@@ -1,0 +1,1454 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+    font-family: tahoma !important;
+    /* width: 8.4in; */
+    margin: 0 auto !important;
+    background : #fff !important;
+}
+
+
+abbr,
+address,
+article,
+aside,
+audio,
+b,
+blockquote,
+body,
+canvas,
+caption,
+cite,
+code,
+dd,
+del,
+details,
+dfn,
+div,
+dl,
+dt,
+em,
+fieldset,
+figcaption,
+figure,
+footer,
+form,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+header,
+hgroup,
+html,
+i,
+iframe,
+img,
+ins,
+kbd,
+label,
+legend,
+li,
+mark,
+menu,
+nav,
+object,
+ol,
+p,
+pre,
+q,
+samp,
+section,
+small,
+span,
+strong,
+sub,
+summary,
+sup,
+table,
+tbody,
+td,
+tfoot,
+th,
+thead,
+time,
+tr,
+ul,
+var,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    background: 0 0;
+    line-height: 1.15;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+
+button,
+input {
+    overflow: visible;
+    font-family: Poppins, sans-serif;
+}
+
+[type="reset"],
+[type="submit"],
+button,
+html [type="button"] {
+    -webkit-appearance: button;
+}
+
+    [type="button"]::-moz-focus-inner,
+    [type="reset"]::-moz-focus-inner,
+    [type="submit"]::-moz-focus-inner,
+    button::-moz-focus-inner {
+        border-style: none;
+        padding: 0;
+    }
+
+textarea {
+    overflow: auto;
+}
+
+[type="checkbox"],
+[type="radio"] {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0;
+}
+
+[type="search"] {
+    -webkit-appearance: textfield;
+    outline-offset: -2px;
+}
+
+::-webkit-file-upload-button {
+    -webkit-appearance: button;
+    font: inherit;
+}
+
+p a {
+    background: 0 0 !important;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+textarea {
+    outline: 0 !important;
+}
+
+audio,
+canvas,
+video {
+    display: inline-block;
+}
+
+a {
+    outline: 0 !important;
+}
+
+audio:not([controls]) {
+    display: none;
+    height: 0;
+}
+
+[hidden] {
+    display: none;
+}
+
+code,
+kbd,
+pre,
+samp {
+    font-family: monospace, serif;
+    font-size: 1em;
+}
+
+pre {
+    white-space: pre;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+}
+
+blockquote:after,
+blockquote:before,
+q:after,
+q:before {
+    content: "";
+    content: none;
+}
+
+ins {
+    background-color: #ff9;
+    color: #000;
+    text-decoration: none;
+}
+
+mark {
+    background-color: #a7f4f6;
+    color: #555;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+abbr[title],
+dfn[title] {
+    border-bottom: 1px dotted;
+    cursor: help;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+button {
+    outline: 0 !important;
+}
+
+input {
+    outline: 0 !important;
+}
+
+textarea {
+    outline: 0 !important;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+a {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+button,
+input,
+optgroup,
+select,
+textarea {
+    font-family: Poppins, sans-serif;
+    font-size: 100%;
+    line-height: 1.15;
+    margin: 0;
+}
+
+.container {
+    max-width: 8.4in;
+    width: 100%;
+    margin: 0 auto;
+    padding: 5px 0px;
+}
+/* .main-wapper{
+    border: 15px solid;
+    border-image: linear-gradient(to top, #FFA567, #FFA567, #FF8420, #E36B00 ) 1;
+} */
+.main-wapper {
+    border: 8px solid !important;
+    border-image: linear-gradient(to top, #13017c, #1c3487, #ce6e0d, #99690c) 1 !important;
+    position: relative;
+    z-index: 99;
+}
+
+table,
+th,
+td {
+    border: 1px solid #ddd;
+    border-collapse: collapse;
+    padding: 3.5px 8px;
+    font-size: 13px;
+    color:#000;
+}
+
+/****========= start update header area css ***=========*/
+.report-header-top-information-grid {
+    display: grid;
+    grid-template-columns: 1fr auto 1fr auto;
+    border: 1px solid #ddd;
+    height: 24px;
+    justify-content: center;
+    align-items: center;
+    line-height: 24px;
+    text-align: center;
+}
+
+.report-header-top-information-grid.report-heder-flex {
+    display: flex;
+    justify-content: space-between;
+    border: none;
+    height: inherit;
+    line-height: inherit;
+    align-items: inherit;
+}
+
+.header-info-single-item.nature-col span {
+    margin-left: 7px;
+}
+
+.header-info-single-item span,
+.header-info-single-item small {
+    font-size: 13px;
+    color: #000;
+    font-weight: 500;
+}
+
+.header-info-single-item small {
+    font-size: 12px;
+}
+
+.header-info-single-item .report-result,
+.header-info-single-item .report-pass {
+    color: #fff;
+    padding: 6px 33px;
+    font-size: 14px;
+}
+
+.header-info-single-item-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.full-row {
+    background: #bfbfbf;
+    width: 100%;
+}
+
+.report-header-top-information-grid.report-header-top-information-grid-more {
+    height: inherit;
+    grid-template-columns: 1fr 1fr 0.9fr 1fr;
+    text-align: left;
+    padding: 5px 8px;
+    gap: 5px;
+    border: none;
+}
+
+.base-febric {
+    margin-right: 3px !important;
+}
+
+.header-grid-col2 {
+    display: grid;
+    grid-template-columns: 3fr 5.75fr 3fr;
+    padding: 6px 8px;
+    gap: 3px;
+    padding-left: 8px;
+    padding-top: 0;
+    padding-bottom: 7px;
+}
+
+.base-fabric-row {
+    display: grid;
+    grid-template-columns: 4.6fr 5.3fr 2.2fr;
+    gap: 5px;
+    padding: 2px 8px;
+}
+
+    .base-fabric-row.first-row {
+        gap: 0px;
+        grid-template-columns: 4.6fr 7.4fr;
+    }
+
+.border-full-row {
+    width: 100%;
+    height: 17px;
+    background: #bfbfbf;
+    /* background: red; */
+    position: relative;
+    z-index: -1;
+}
+
+.carton-image-grid.image-col-2 {
+    grid-template-columns: repeat(2, 1fr);
+}
+/****========= start header area css ***=========*/
+.header-top {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0px;
+}
+
+.header-content h2 {
+    font-size: 25px;
+    color: #99690c;
+    text-decoration: underline;
+}
+
+.header-top img {
+    width: 56px;
+    object-fit: cover;
+    height: auto;
+    margin-right: 10px;
+}
+
+.header-content span {
+    display: block;
+    text-align: center;
+    font-size: 20px;
+    padding-top: 5px;
+    color: #1c3487;
+    font-weight: 600;
+}
+
+.general {
+    text-align: left !important;
+    font-weight: 600;
+    background: #bfbfbf !important;
+    position: relative;
+    z-index: 9999999999999999;
+}
+
+.header-info-full-row.header-info-single-item span b {
+    padding: 4.5px 8px;
+}
+
+.report-pass,
+.report-result {
+    background: #04ba09;
+    color: #fff;
+    font-weight: 600;
+    font-size: 15px;
+}
+ /* if button fail need to class add fail  */
+.report-pass.fail {
+    background: red;
+    color: #fff;
+}
+
+.report-result {
+    background: #f68e05;
+}
+
+.common-bg {
+    background: #f68e05 !important;
+    color: #fff;
+}
+
+.pass-bg {
+    background: #04ba09;
+    color: #fff;
+}
+
+.fail {
+    background: red;
+    color: #fff;
+}
+/****========= End header area css ***=========*/
+.table-chart-top table tr {
+    height: 22px;
+}
+
+/****========= start base area css ***=========*/
+section.base-fabrice > table,
+th,
+td,
+.table-chart-top > table,
+th,
+td,
+.table-carton-top > table,
+th,
+td {
+    border-top: none;
+}
+
+td.base-agent {
+    width: 136px;
+}
+
+td.base-date {
+    width: 126px;
+}
+
+td.base-address {
+    width: 157px;
+}
+/****========= End header area css ***=========*/
+
+/****========= start aql-char css ***=========*/
+tr.aql-chart-heading > td > span {
+    display: block;
+}
+/****========= End aql-char area css ***=========*/
+
+/****========= start DEFECTS DESCRIPTION area css ***=========*/
+td.defect-found-right {
+    text-align: right;
+    font-weight: bold;
+}
+
+.unit-blod {
+    font-weight: bold;
+    background: #ddd;
+}
+
+/****========= End DEFECTS DESCRIPTION css ***=========*/
+
+/****========= start INSPECTION SUMMARY css ***=========*/
+
+.summery-row {
+    min-height: 145px;
+}
+
+.summery-row p {
+    font-size: 13px;
+    padding: 3px 10px;
+    text-align: left;
+}
+
+/****========= End INSPECTION SUMMARY css ***=========*/
+
+/****========= start CARTON DETAILS css ***=========*/
+.carton-img-inner {
+    min-height: 230px;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.carton-img-inner input {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 99;
+    opacity: 0;
+}
+
+a:hover, a:focus {
+    text-decoration: none !important;
+}
+
+.carton-image-grid.image-col-2 .carton-img-inner {
+    min-height: 300px;
+}
+
+img.carton-img {
+    max-width: 350px;
+    width: 100%;
+    max-height: 230px;
+    height: auto;
+    object-fit: contain;
+}
+
+.carton-image-grid.image-col-2 img.carton-img {
+    max-height: 300px;
+}
+
+.carton-image-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    text-align: center;
+    border-top: none;
+    padding: 8px 8px;
+}
+
+.carton-col p {
+    font-size: 13px;
+    color: #000;
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    font-family: tahoma;
+    padding-top: 5px;
+}
+
+.carton-row {
+    background: #ffff;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+    padding: 10px;
+    border-radius: 8px;
+}
+
+/****========= End CARTON DETAILS css ***=========*/
+
+/****========= start footer area css ***=========*/
+.footer-area {
+    text-align: center;
+    padding: 20px 0px;
+}
+
+.footer-content > p {
+    font-size: 13px;
+    line-height: 1.2;
+    color: #2e3092;
+}
+
+/****========= End footer area css ***=========*/
+
+section.base-fabrice.agent-table {
+    width: 100%;
+}
+
+section.aql-chart-area {
+    width: 100%;
+}
+
+section.style-image-area {
+    width: 100%;
+}
+
+section.inspection-summary-area {
+    width: 100%;
+}
+
+section.carton-details-area {
+    width: 100%;
+}
+
+section.defects-description-area {
+    width: 100%;
+}
+
+section.carton-details-item-area {
+    width: 100%;
+}
+
+.pageCount {
+    display: none;
+}
+
+.report-base-fabric {
+    position: relative;
+    padding-top: 13px;
+}
+
+.report-base-fabric::after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 15px;
+    background: #bfbfbf;
+    top: 0;
+    left: 0;
+    z-index: 9;
+}
+
+/* new fix css */
+
+.full-row h2 {
+    font-size: 13px;
+    font-weight: 600;
+    padding: 3px 8px;
+    line-height: 1.3;
+    color:#000;
+}
+
+.inspection-summary .general {
+    font-size: 13px;
+    padding: 3px 5px;
+    border-bottom: 1px solid #ddd;
+    line-height: 1.3;
+    color: #000;
+}
+
+.inspection-details .general {
+    font-size: 13px;
+    padding: 3px 5px;
+    border-bottom: 1px solid #ddd;
+    line-height: 1.3;
+    color: #000;
+}
+
+.table-carton-top > table,
+th,
+td {
+    border-top: 1px solid #ddd;
+}
+
+.desk-m {
+    margin: 5px 0px;
+}
+
+.full-row.image-style-full-row.desk-m {
+    margin-top: 10px;
+}
+
+.inspection-summary .general.pl_root.desk-m {
+    margin-top: 8px;
+}
+
+section.defects-description-area {
+    padding: 10px 0px;
+}
+
+.pl_root.aql_relative {
+    position: relative;
+    top: -1px;
+}
+
+.carton_details_flex {
+    display: flex;
+    flex-wrap: wrap;
+    border: 1px solid #ddd;
+    padding: 3.5px 8px;
+    margin: 10px 0px;
+}
+
+.carton_details_flex span {
+    font-size: 13px;
+    font-family: tahoma;
+    color: #000;
+}
+
+.carton_details_flex small {
+    font-size: 12px;
+    font-family: tahoma;
+    color: #000;
+}
+
+.carton-con1 {
+    flex: 0 0 14%;
+}
+
+.carton-con2 {
+    flex: 0 0 5%;
+}
+
+.carton-con3 {
+    flex: 0 0 13%;
+}
+
+.carton-con4 {
+    flex: 0 0 68%;
+}
+
+.attach-single-image-1x {
+    grid-template-columns: repeat(1, 1fr);
+}
+
+.attach-single-image-1x .carton-img-inner {
+    min-height: 750px;
+    /*max-height: 750px;*/
+    justify-content: center;
+}
+
+.attach-single-image-1x .carton-img-inner img.carton-img1 {
+    max-width: 100%;
+    max-height: 740px;
+}
+
+.attach-single-image-1x .carton-col p {
+    font-size: 15px;
+    width: 90%;
+    padding: 10px 5px;
+}
+
+.inspection-details {
+    text-align: center;
+}
+
+.add-button {
+    display: inline-block;
+    margin: 15px;
+    font-family: tahoma;
+    padding: 9px 41px;
+    cursor: pointer;
+    border: 2px solid;
+    border-image: linear-gradient(to left, #13017c, #1c3487, #ce6e0d, #99690c) 1;
+    position: relative;
+    z-index: 99;
+    background: transparent;
+    border-radius: 8px;
+    overflow: hidden;
+    font-weight: bold;
+}
+
+
+.add-buttonx {
+    display: inline-block;
+    margin: 15px;
+    font-family: tahoma;
+    padding: 9px 12px;
+    cursor: pointer;
+    border: 2px solid;
+    border-image: linear-gradient(to left, #13017c, #1c3487, #ce6e0d, #99690c) 1;
+    position: relative;
+    z-index: 99;
+    background: transparent;
+    border-radius: 8px;
+    overflow: hidden;
+    font-weight: bold;
+}
+
+.add-button-f {
+    display: inline-block;
+    margin: 15px;
+    font-family: tahoma;
+    padding: 9px 32px;
+    cursor: pointer;
+    border: 2px solid;
+    border-image: linear-gradient(to left, #13017c, #1c3487, #ce6e0d, #99690c) 1;
+    position: relative;
+    z-index: 99;
+    background: transparent;
+    border-radius: 8px;
+    overflow: hidden;
+    font-weight: bold;
+}
+
+.carton-col > button {
+    border: navajowhite;
+    font-size: 12px;
+    background: none;
+    color: red;
+    text-decoration: underline;
+    text-align: left;
+    cursor: pointer;
+    margin: 5px 0px;
+}
+
+.auto_bind.inside-summery-row p {
+    padding: 1px;
+}
+.update-main-wapper{
+    margin-bottom: 75px;
+}
+
+.reportPrint {
+    position: absolute;
+    right: 4px;
+    top: 4px;
+    cursor: pointer;
+    background: transparent;
+    border: 1px solid #ddd;
+    padding: 4px 13px;
+    font-size: 12px;
+    font-family: tahoma;
+    font-weight: bold;
+}
+.carton-info-update {
+    width: 100%;
+    box-sizing: border-box;
+    min-height: 32px;
+    border: 2px solid #ddd;
+    padding: 5px;
+    border-radius: 4px;
+    display: block;
+    line-break: anywhere;
+}
+.footer-area span {
+    font-size: 13px;
+    position: relative;
+    top: -2px;
+}
+
+
+
+
+
+/*================) css for form page (================*/
+.carton-row.custom-row-form .carton-img-inner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.summery-row textarea {
+    width: 97%;
+    min-height: 145px;
+    border: none;
+    font-size: 13px;
+    padding: 5px 10px;
+    text-align: justify;
+    line-height: 1.5;
+}
+
+.carton-row.custom-row-form .carton-img-inner img {
+    max-width: 350px;
+    width: 100%;
+    max-height: 230px;
+    height: auto;
+    object-fit: contain;
+}
+
+.carton-col input[type="text"],
+.carton_details_flex_form_single input[type="text"] {
+    font-size: 13px;
+    font-family: tahoma;
+    width: 100%;
+    box-sizing: border-box;
+    height: 32px;
+    border: 2px solid #ddd;
+    padding: 5px;
+    line-height: 32px;
+    border-radius: 4px;
+    display: block;
+    color: #000;
+    text-align: center;
+}
+.carton-con4 textarea {
+    font-size: 13px;
+    font-family: tahoma;
+    width: 100%;
+    box-sizing: border-box;
+    min-height: 32px;
+    border: 2px solid #ddd;
+    padding: 5px;
+    border-radius: 4px;
+    display: block;
+    color: #000;
+    text-align: left;
+}
+
+input::placeholder {
+    /* opacity: 0.9; */
+    color: #ceb0b0;
+}
+
+.carton-image-grid.image-col-2 .custom-row-form img.carton-img {
+    max-height: 290px;
+}
+
+.carton-image-grid.image-col-2 .custom-row-form input {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.carton_details_flex small.carton-con2 input,
+.carton_details_flex small.carton-con4 input {
+    width: 100%;
+    box-sizing: border-box;
+    text-align: left;
+}
+
+.carton_details_flex_form_single {
+    flex: 0 0 100%;
+}
+
+.table-chart-top.defects-description-table input {
+    border: none;
+    height: inherit;
+    padding: 0px;
+    line-height: inherit;
+    width: 100%;
+}
+
+#mainSection {
+    position: relative;
+}
+
+#mainSection::after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 15px;
+    top: 0px;
+    left: 0px;
+    background: #bfbfbf;
+    z-index: 99999999;
+}
+
+.attach-btn-group {
+    padding-top: 15px;
+}
+.bottom-button-area {
+    position: fixed;
+    bottom: 0;
+    z-index: 999;
+    background-color: white;
+    margin: 0 auto;
+    width: 8.4in;
+    border-top: 2px solid #ddd;
+}
+    .bottom-button-area .input-group {
+        margin: 20px;
+        float: left;
+        font-weight: bold;
+        font-size: 20px;
+        font-family: tahoma;
+    }
+    .bottom-button-area .input-group input {
+        font-family: tahoma;
+        height: 28px;
+        border: 2px solid #ddd;
+        padding-left: 5px;
+        line-height: 32px;
+        border-radius: 4px;
+        color: #000;
+        width: 100px;
+        font-size: 18px;
+    }
+    .bottom-button-area .error-validation-message.alert-danger div div {
+        font-size: 14px;
+        top: 0 !important;
+        color: red;
+        left: 100px;
+    }
+.carton-col .btn-cancel {
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    border: 1px solid red;
+    border-radius: 50%;
+    font-size: 1.2em;
+    color: red;
+    line-height: 19px;
+    cursor: pointer;
+    width: 25px;
+    height: 25px;
+    background-color: red;
+    opacity: 0.6;
+    z-index: 99999;
+    -webkit-user-select: none; /* Safari */
+    -ms-user-select: none; /* IE 10 and IE 11 */
+    user-select: none; /* Standard syntax */
+}
+    .carton-row .carton-col, .carton-col .btn-cancel a {
+        position: relative;
+    }
+    /*.carton-row .carton-col .btn-cancel span {
+        color: white;*/
+        /*position: absolute;*/
+        /*left: -4px;
+        top: 21px;
+        font-size: 15px;
+    }*/
+    .carton-row .carton-col .btn-cancel span {
+        color: white;
+        position: relative;
+        left: 0;
+        top: 1px;
+        font-size: 15px;
+    }
+    /*.defect-found-after{
+        position:relative;
+    }
+    .defect-found-after::after {
+        position: absolute;
+        content: "";
+        width: 16%;
+        height: 21.8px;
+        background: #f68e05;
+        left: -8px;
+        top: 0;
+    }*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    body {
+        counter-reset: page;
+        display: grid;
+        grid-template-rows: 230px auto 50px; 
+        grid-template-areas:
+            "header"
+            "content"
+            "footer";
+        }
+    
+        header {
+            grid-area: header;
+            top: 0;
+            left: 0px;
+            width: 100%;
+            right: 0;
+            height: 216px; 
+            z-index: 9; 
+            margin: 0 auto;
+        }
+    
+        main {
+            grid-area: content;
+            margin-top: 0; 
+            position: relative;
+            min-height: 675px;
+            max-height: 675px;
+        }
+    
+
+    
+        footer {
+            grid-area: footer;
+            bottom: 25px;
+            left: 0;
+            right: 0;
+            height: 64px; 
+            z-index: 9; 
+        }
+
+        .pageCount {
+            display: block;
+            position: absolute;
+            bottom: -19%;
+            right: 20px;
+            z-index: 9999;
+        }
+    
+        .pageCount span {
+            font-size: 12px;
+        }
+    
+        /* Additional CSS for specific elements */
+        #report-container {
+            background: #fff;
+        }
+        .aql-hide .style-image-area {
+            height:599px;
+        }
+        .aql-hide .carton-image-grid.image-col-2 {
+            align-items:center;
+            padding-top: 120px;
+        }
+        .reportPrint {
+            display: block;
+        }
+    
+        .flex-single-image-carton-grid {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .inspection-details {
+            text-align: center;
+        }
+        .carton-row {
+            align-self: self-start;
+            flex: 0 0 28%;
+        }
+    
+        #mainSection::after {
+            display: none;
+        }
+    
+        .header-info-single-item {
+            padding-left: 8px !important;
+        }
+    
+        .pl_root {
+            padding-left: 9px !important;
+        }
+    
+        .margin-root {
+            margin: 5px 0px !important;
+            display: block;
+        }
+    
+        .mb-8 {
+            margin-bottom: 8px !important;
+        }
+    
+        .mb-6 {
+            margin-bottom: 2px !important;
+        }
+    
+        .report-base-fabric::after {
+            top: -4px;
+            height: 18px;
+        }
+    
+        .carton-image-grid.image-col-2 .carton-img-inner, .carton-image-grid.image-col-2 img.carton-img {
+            min-height: 230px;
+            max-height: 230px;
+        }
+    
+        .carton-img-inner,
+        img.carton-img {
+            min-height: 150px;
+            max-height: 150px;
+        }
+    
+        .carton-image-grid.image-col-2 {
+            padding-top: 10px;
+            padding-bottom: 10px;
+        }
+    
+        .table-chart-top table tr,
+        .table-chart-top table tr td {
+            height: 18px;
+            padding: inherit;
+            padding-left: 3px;
+            padding-right: 3px;
+            font-size: 12px;
+        }
+    
+        section.aql-chart-area .table-chart-top table tr,
+        section.aql-chart-area .table-chart-top table tr td {
+            height: 15px;
+        }
+    
+        .defects-description-table table tr,
+        .defects-description-table table tr td {
+            height: 10px !important;
+            padding: 2.3px 5px !important;
+            font-size: 11px !important;
+            padding-left: 9px !important;
+        }
+    
+        .inspection-summary {
+            border: none;
+        }
+    
+        .report-base-fabric {
+            padding-top: 14px;
+            /*padding-bottom: 5px;*/
+        }
+    
+        .carton-image-grid {
+            gap: 15px;
+            padding: 10px 12px;
+        }
+    
+        .border-full-row {
+            height: 18px;
+        }
+    
+        .base-fabric-row {
+            padding: 2px 3px;
+        }
+    
+        .report-header-top-information-grid {
+            text-align: left;
+            padding-left: 6px;
+        }
+    
+        .summery-row {
+            min-height: 85px;
+            max-height: 85px;
+        }
+    
+        /* .main-wapper {
+            border: none;
+        } */
+    
+        .base-fabric-row.first-row {
+            gap: 0px;
+        }
+    
+        table,
+        th,
+        td {
+            padding: 3.5px 3px;
+            padding-left: 9px !important;
+        }
+    
+        .full-row.image-style-full-row {
+            margin-top: 6px !important;
+        }
+    
+        /* .summery-row p {
+            padding: 5px 10px !important;
+        }*/
+        .auto_bind.inside-summery-row p {
+            padding: 1px;
+        }
+    
+        .header-info-single-item.nature-col span {
+            margin-left: 0px;
+        }
+    
+        .carton-image-grid.single-image-carton-grid {
+            padding: 15px 15px;
+            gap: 25px;
+        }
+    
+        .report-header-top-information-grid.report-header-top-information-grid-more {
+            gap: 1px;
+            padding : 3px 8px;
+        }
+        .header-grid-col2 {
+            gap: 1px;
+        }
+    
+        .carton-image-grid {
+            border: none;
+        }
+    
+        .report-header-top-information-grid.report-header-top-information-grid-more,
+        .header-grid-col2 {
+            padding-left: 3px;
+        }
+    
+        .header-info-single-item.nature-col span {
+            margin-left: -3px;
+        }
+    
+        .full-row h2 {
+            padding-left: 3px;
+        }
+    
+        tr.general {
+            padding-left: 3px !important;
+        }
+        /* new fix css */
+        .desk-m {
+            margin: 0px;
+        }
+    
+        .full-row h2 {
+            font-size: 13px;
+            font-weight: 600;
+            padding: 2px 8px;
+            line-height: 1.1;
+        }
+    
+        .inspection-summary .general {
+            font-size: 13px;
+            padding: 2px 5px;
+            border-bottom: 1px solid #ddd;
+            line-height: 1.1;
+        }
+      
+    
+        .inspection-details .general {
+            font-size: 13px;
+            padding: 2px 5px;
+            border-bottom: 1px solid #ddd;
+            line-height: 1.1;
+        }
+    
+        .table-carton-top > table,
+        th,
+        td {
+            border-top: 1px solid #ddd;
+        }
+    
+        .full-row.image-style-full-row.desk-m {
+            margin-top: auto;
+        }
+    
+        .inspection-summary .general.pl_root.desk-m {
+            margin-top: auto;
+        }
+    
+        section.defects-description-area {
+            padding: 0px;
+        }
+    
+        .pl_root.aql_relative {
+            position: relative;
+            top: -1px;
+        }
+    
+        .carton_details_flex {
+            padding: 3.5px 5px;
+            padding-left: 9px;
+            min-height: 29px;
+            margin-bottom: 0px;
+        }
+    
+        .carton_details_flex small {
+            font-size: 11px;
+        }
+    
+        .base-febric {
+            margin-right: 0px !important;
+            padding-right: 3px;
+        }
+        .carton_details_flex {
+            min-height: auto;
+        }
+
+        .carton-con1 {
+            flex: 0 0 16%;
+        }
+        .carton-con2 {
+            flex: 0 0 6%;
+        }
+        .carton-con3 {
+            flex: 0 0 15%;
+        }
+        .carton-con4 {
+            flex: 0 0 63%;
+        }
+        .carton_details_flex {
+            margin: 0px 0px;
+        }
+        .defects-description-table table tr, .defects-description-table table tr td {
+            padding: 0.8px 5px !important;
+        }
+        .carton-row {
+            padding: 8px;
+        }
+        .carton_details_flex small {
+            line-height: initial;
+        }
+        .attach-single-image-1x .carton-img-inner {
+            min-height: 580px;
+            justify-content: center;
+        }
+        .carton_details_flex {
+            padding: 1.5px 5px;
+        }
+        .carton-image-grid {
+            padding: 8px 12px;
+        }
+        .attach-single-image-1x .carton-img-inner img.carton-img1 {
+            max-height: 580px;
+        }
+        .main-wapper {
+            border: 8px solid #99690c !important;
+        }
