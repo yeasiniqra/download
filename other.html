@@ -360,6 +360,17 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.2/html2pdf.bundle.js"></script>
         <!-- <script src="https://cdn.jsdelivr.net/npm/jspdf@2.5.1/dist/jspdf.es.min.js"></script> -->
         <script>
+            //js for page count
+                var mainElements = document.querySelectorAll("main");
+                var totalPages = mainElements.length;
+
+                for (var i = 0; i < mainElements.length; i++) {
+                    var h2 = mainElements[i].querySelector("h2");
+                    var pageNumElement = document.createElement("span");
+                    pageNumElement.textContent = "Page " + (i + 1) + " of " + totalPages;
+                    h2.appendChild(pageNumElement);
+                }
+            // js for html to pdf
             document.getElementById("btnDownload").addEventListener("click", () => {
                 const invoice = document.getElementById("item-download");
                 console.log(invoice);

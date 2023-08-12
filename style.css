@@ -1098,7 +1098,7 @@ input::placeholder {
 
 
 
-
+  /* css for html to pdf */
     body {
         counter-reset: page;
         display: grid;
@@ -1142,7 +1142,7 @@ input::placeholder {
         .pageCount {
             display: block;
             position: absolute;
-            bottom: -19%;
+            bottom: -12%;
             right: 20px;
             z-index: 9999;
         }
